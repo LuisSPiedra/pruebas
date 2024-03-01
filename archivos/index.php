@@ -12,6 +12,8 @@
         <?php
             require('views/header.html');
             require('views_bd/crear.html');
+            require('views_bd/editar.html');
+    
         ?>
         
     </div>
@@ -27,13 +29,20 @@
                 $nombre=$row['nombre'];
                 $nombreArchivo = $row['archivo'];
                 $rutaArchivo = $row['ruta'];
-                echo "<p><a href='assets/php/'$rutaArchivo' download='$nombreArchivo'>$nombre</a> - <a href='assets/php/editar.php?id=$idArchivo'>Editar</a> - <a href='assets/php/eliminar.php?id=$idArchivo'>Eliminar</a></p>";
+                $imagen=$row['rutai'];
+                echo "<img src='assets/php/$imagen' alt='' style='width: 50px; height: 50px;'>";
+                echo "<p><a href='assets/php/$rutaArchivo' download='$nombreArchivo'>$nombre</a> - <a href='assets/php/editar.php?id=$idArchivo'>Editar</a> - <a href='assets/php/eliminar.php?id=$idArchivo'>Eliminar</a></p>";
+                
                 
             }
-
-            $conn->close();
+            
+            
         ?>
         
     </div>
+    <?php
+    $conn->close();
+    ?>
+
 </body>
 </html>

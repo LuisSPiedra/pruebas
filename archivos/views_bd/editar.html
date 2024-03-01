@@ -1,0 +1,49 @@
+<html lang="es">
+    <link rel="stylesheet" href="assets/css/pop.css">
+    <div class="pop">
+        <div id="miPopupEditar" class="popup">
+            <div class="popup-contenido">
+                <button class="cerrar" onclick="cerrarEditar()">Cerrar</button>
+
+                <div class="pop_cont">
+                    <form action="assets/php/crear.php" method="post" enctype="multipart/form-data">
+                        <div class="datos">
+                            <label for="nombre">bb</label>
+                            <input type="text" class="nombre" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="datos">
+                            <label for="imagen">Imagen:</label>
+                            <input type="file" class="imagen" id="imagen" placeholder="Imagen" name="imagen">
+                        </div>
+                        <div class="datos">
+                            <label for="file">Selecciona un archivo:</label>
+                            <input type="file" name="file" id="file">
+                        </div>
+                        
+                        <div class="datos">
+                            <label for="opciones">Tipo:</label>
+                            <select name="opciones" id="opciones">
+                                <option value="1">Libro</option>
+                                <option selected value="2">Proyecto</option>
+                                <option value="3">Articulo</option>
+                                <option value="4">Guía</option>
+                                <option value="5">Tesis</option>
+                                <option value="6">Trabajo Escolar</option>
+                                <option value="7">Investigacion</option>
+                            </select>
+                        </div>
+                        <div class="datos">
+                            <label for="usuario">Usuario</label>
+                            <input type="text" name="usuario">
+                        </div>
+                        <div class="datos">
+                            <input type="submit" value="Guardar" id="guardar" name="guardar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="assets/js/pop.js"></script>
+    </div>
+</html>
