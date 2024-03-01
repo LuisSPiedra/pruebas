@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.cont{
+
+    justify-content: center;
+    
+    min-height: 100vh;
+
+    background: #7d2ae8;
+    margin-bottom: 0;
+}
+.btn-arriba{
+    position:fixed;
+    top:0;
+    width: 100%;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid silver;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.btn-arriba .crud{
+    border-radius: 5px;
+    outline: none;
+    width: 320px;
+    height: 40px;
+    color: #fff;
+    padding: 0 10px;
+    background: transparent;
+    border: 1.2px solid #fff;
+}
+.formulario{
+    margin-bottom: 0;
+    background: #c81111;
+    width: 90%;
+    justify-items: left;
+    text-align: left;
+    align-items: start;
+    float: left;
+    position:fixed;
+}
+
+/* card*/
+.card img{
+    width: 100px;
+    height: 100px;
+}
+ets/php/registro.php): Failed to open stream: No such file or directory in /home/u600466123/domains/compactaciones-um.com/public_html/plantel.php on line 90

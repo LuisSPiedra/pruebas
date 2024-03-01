@@ -1,0 +1,160 @@
+.cuerpazo{
+    margin: 0;
+}
+/* formato general de la parte de arriba*/
+.cont{
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Color de fondo, puedes cambiarlo según tus preferencias */
+    color: #fff; /* Color de texto, puedes cambiarlo según tus preferencias */
+    /*padding: 10px;  Espaciado interno para mayor legibilidad */
+    z-index: 1000; /* Asegura que el div esté por encima de otros elementos */
+    height: 80px;
+    background: #0B67A8;
+}
+.head{
+    height: 100%;
+    background: transparent;
+    width: 100%;
+    overflow: hidden; /* Limpiar el float */
+}
+/* Estilo del div a la izquierda */
+.izquierda {
+    height: 100%;
+    float: left;
+    width: 85%; /* O el ancho que desees */
+    background-color: transparent; /* Solo para visualización */
+
+}
+
+ /* Estilo del div a la derecha */
+.derecha {
+    height: 100%;
+    float: right;
+    width: 14%; /* O el ancho que desees */
+    background-color: transparent; /* Solo para visualización */
+    padding-right: 1%;
+}
+/* Estilos de las actividades */
+.actividades{
+
+    height: 100%;
+    background: transparent;
+    width: 100%;
+    overflow: hidden; /* Limpiar el float */
+}
+.categorias{
+    overflow: hidden; /* Limpiar el float */
+    width: 60%;
+    float: right;
+    height: 100%;
+}
+.cad {
+    float: right;
+    width: 33.33%; /* Ancho de cada div (puedes ajustar según el número de divs) */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    padding: 10px; /* Añade espacio interno (puedes ajustar según tus necesidades) */
+    background-color: transparent; /* Color de fondo (solo para visualización) */
+    height: 100%;
+}
+.cad input{
+    padding: 10px;
+    height: 95%;
+    width: 100%;
+}
+/*Buscador*/
+.buscador{
+    overflow: hidden; /* Limpiar el float */
+    width: 40%;
+    float: left;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    
+}
+.barra{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 70%;
+    width: 80%;
+    border-radius: 10px 0 0 10px;
+    font-size: 100%;
+    border: 1px solid #ffffff;
+}
+.buscar{
+    margin-top: 10px;
+    height: 74%;
+    width: 15%;
+    background-color: #4B8DCA;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    font-size: 100%;
+    align-items: center;
+}
+.buscar:hover{
+    background-color: #0056b3;
+    border-color: #ffffff;
+}
+.logo{
+    padding-left: 3px;
+    padding-top: 2px;
+    height: 90%;
+    border-radius: 10%;
+    pointer-events: none;
+}
+/* Estilos del perfil*/
+.perfil{
+    margin-top: 3%;
+    border-radius: 41px;
+    height: 80%;
+    background: white;
+    width: 100%;
+    overflow: hidden; /* Limpiar el float */
+    border: 2px solid rgb(255, 255, 255); /* Borde sólido azul */
+}
+.image{
+    border-radius: 0 50% 50% 0;
+    height: 100%;
+    width: 30%;
+    pointer-events: none;
+}
+.user{
+    float: right;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 65%;
+    height: 100%;
+    letter-spacing: 3px;
+    background: transparent;
+    border: 0;
+}
+
+/*Botones de arriba*/
+.btnE{
+    background: transparent;
+    color: white;
+    border: 0;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    font-size: 15px;
+}
+.btnE:hover{
+    background-color: #4B8DCA;
+    border-color: #ffffff;
+}
+
+.categorias form{
+    padding-top: 0;
+    margin: 0;
+    height: 100%;
+}

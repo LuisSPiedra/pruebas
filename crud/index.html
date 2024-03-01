@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Contenido Dependiendo de la Opción Seleccionada</title>
+    <style>
+        /* Agrega estilos según sea necesario */
+        body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+        }
+
+        button {
+        padding: 10px;
+        font-size: 16px;
+        margin: 5px;
+        }
+
+        .contenido {
+        display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="mostrarContenido()">Mostrar contenido</button>
+
+    <select id="opciones" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <div id="contenido" class="contenido">
+        <p>Contenido para la Opción 1</p>
+    </div>
+
+    <div id="contenido" class="contenido">
+        <p>Contenido para la Opción 2</p>
+    </div>
+
+    <div id="contenido" class="contenido">
+        <p>Contenido para la Opción 3</p>
+    </div>
+
+    <script>
+        function mostrarContenido() {
+        const seleccion = document.getElementById("opciones");
+        const opcionSeleccionada = seleccion.options[seleccion.selectedIndex].value;
+            // Oculta todos los contenidos
+        var todosLosContenidos = document.querySelectorAll(".contenido");
+        todosLosContenidos.forEach(function (contenido) {
+            contenido.style.display = "none";
+        });
+
+
+        // Muestra el contenido correspondiente a la opción seleccionada
+        var contenidoMostrar = document.getElementById("contenido"+opcionSeleccionada);
+        contenidoMostrar.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #7d2ae8;
+    height: 100vh;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction:column;
+}
+.btn-arriba{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid silver;
+    align-items: center;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-top: 120px;
+    margin-bottom: 0;
+    background: #c81111;
+}
+
+.btn-arriba .crud{
+    border-radius: 5px;
+    outline: none;
+    width: 320px;
+    height: 40px;
+    color: #fff;
+    padding: 0 10px;
+    background: transparent;
+    border: 1.2px solid #fff;
+}
+
+/* card*/
+.card img{
+    width: 100px;
+    height: 100px;
+    justify-items: left;
+    text-align: left;
+}
+.card{
+    background: #c81111;
+    width: 90%;
+    justify-items:flex-start;
+    text-align:
+    align-items: start;
+    float: left;
+    position:fixed;
+}
+.formulario{
+    background: #c81111;
+}

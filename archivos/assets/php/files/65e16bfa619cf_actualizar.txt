@@ -1,0 +1,7 @@
+git init
+git add .
+git status
+git commit -m "tercer comentario"
+git status
+git branch -M main
+git push -u origin main

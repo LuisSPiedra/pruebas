@@ -1,0 +1,31 @@
+<html lang="es">
+    <title>Crear</title>
+    <link rel="stylesheet" href="../assets/css/formularios.css">
+    <div class="cont">
+        <div class="formu">
+            <form action="../assets/php/crear.php" method="post" enctype="multipart/form-data">
+                <h2>Plantel</h2>
+                <div class="entrada">
+                    <input type="text" required class="name" id="name" name="name">
+                    <label for="">Plantel</label>
+                </div>
+                <div class="entrada">
+                    <input type="text" required class="adress" id="adress" name="adress">
+                    <label for="">Direccion</label>
+                </div>
+                <div class="entrada">
+                    <input type="text" required class="phone" id="phone" name="phone">
+                    <label for="">Telefono</label>
+                </div>
+                <div class="archivo">
+                    <label for="">Selecciona una imagen </label>
+                    <input type="file" name="imagen" id="imagen">
+                    
+                </div>
+                
+                <input type="submit" value="Guardar" class="btnG">
+            </form>
+        </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</html>

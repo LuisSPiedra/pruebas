@@ -1,0 +1,20 @@
+#formulario{
+    display: none;
+}
+#datos{
+    display: none;
+}
+#botonM{
+    display: block;
+    float: left;
+
+}
+#botonMF{
+    display: block;
+    float: left;
+}
+#botonO{
+    float: right;
+    margin-right: 250px;
+}
+
