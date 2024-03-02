@@ -9,16 +9,20 @@
 <body>
     <div>
     <?php
-    require('layout/header.html');
+    require('layout/header.php');
     ?>
     
         <div>
             <?php
-            require('pages/materias.html')
+            
+            require('pages/archivos.php');
+            
             ?>
         </div>
+        
         <div>
         <?php
+            require('pages/crear.html');
             require('layout/footer.html')
             ?>
         </div>

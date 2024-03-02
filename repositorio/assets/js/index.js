@@ -12,7 +12,7 @@ function arch() {
 }
 function inicio() {
     // Cambiar la URL a la que deseas redireccionar
-    window.location.href = 'index.php';
+    window.location.href = 'inicio.php';
 }
 function mostrar(){
     const seleccion = document.getElementById("opciones");

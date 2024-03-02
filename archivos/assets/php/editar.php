@@ -25,6 +25,7 @@ if (isset($_GET['id'])) {
         echo "            <button class='cerrar' onclick='cerrarPopup()'>Cerrar</button>";
         echo "        <div class='pop_cont'>";
         */
+        echo "<title>Editar</title>";
         echo "<form action='guardar.php?id=$idArchivo' method='post' enctype='multipart/form-data'>";
         echo "<div class='datos'>";
         echo "    <label for='nombre'>Nuevo Nombre:</label>";

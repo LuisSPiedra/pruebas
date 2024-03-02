@@ -34,11 +34,8 @@
                 echo "<p><a href='assets/php/$rutaArchivo' download='$nombreArchivo'>$nombre</a> - <a href='assets/php/editar.php?id=$idArchivo'>Editar</a> - <a href='assets/php/eliminar.php?id=$idArchivo'>Eliminar</a></p>";
                 
                 
-            }
-            
-            
+            }  
         ?>
-        
     </div>
     <?php
     $conn->close();

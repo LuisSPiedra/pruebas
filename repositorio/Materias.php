@@ -9,7 +9,7 @@
 <body>
     <div>
     <?php
-    require('layout/header.html');
+    require('layout/header.php');
     ?>
     
         <div>

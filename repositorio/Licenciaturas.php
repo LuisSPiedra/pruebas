@@ -9,12 +9,12 @@
 <body>
     <div>
     <?php
-    require('layout/header.html');
+    require('layout/header.php');
     ?>
     
         <div>
             <?php
-            require('pages/materias.html')
+            require('pages/licenciaturas.html')
             ?>
         </div>
         <div>
