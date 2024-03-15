@@ -1,0 +1,41 @@
+.barran {
+    margin-top: 80px;
+    display: flex;
+}
+  
+.navab {
+    width: 100%; /* Ancho de la barra lateral */
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+  
+.icono {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.icono .text{
+    display: none;
+}
+  
+.icono:hover {
+    background-color: #555;
+}
+  
+
+/* ... (mismo CSS que antes) */
+
+.expandida {
+    width: 200px; /* Ancho de la barra lateral expandida */
+    
+}
+  
+  /* ... (resto del CSS) */
+  /* ... (mismo CSS que antes) */
+
+#navab {
+    transition: width 0.3s; /* Agregar transición para suavizar el cambio de ancho */
+}
+  
+  /* ... (resto del CSS) */

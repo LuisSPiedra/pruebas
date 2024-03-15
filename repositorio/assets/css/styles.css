@@ -3,5 +3,23 @@ body{
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100vh; /* Asegura que el cuerpo ocupa toda la altura de la ventana */
-    position: relative;
+
+}
+.contenido_index{
+
+    width: 100%;
+    overflow: hidden;/* Limpiar el float */
+}
+.c_izq{
+
+    height: 100%;
+    float: left;
+    width: 10%; /* O el ancho que desees */
+
+}
+.c_der{
+
+    height: 100%;
+    float: right;
+    width: 90%; /* O el ancho que desees */
 }

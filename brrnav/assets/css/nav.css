@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+  
+.contenedor {
+    display: flex;
+}
+  
+.barra-lateral {
+    width: 80px; /* Ancho de la barra lateral */
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+  
+.icono {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.icono .text{
+    display: none;
+}
+  
+.icono:hover {
+    background-color: #555;
+}
+  
+.contenido {
+    flex-grow: 1;
+    padding: 20px;
+}
+/* ... (mismo CSS que antes) */
+
+.expandida {
+    width: 200px; /* Ancho de la barra lateral expandida */
+    
+}
+  
+  /* ... (resto del CSS) */
+  /* ... (mismo CSS que antes) */
+
+#barraLateral {
+    transition: width 0.3s; /* Agregar transición para suavizar el cambio de ancho */
+}
+  
+  /* ... (resto del CSS) */

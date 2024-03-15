@@ -12,19 +12,27 @@
         require('layout/header.php');
         ?>
     
-        <div>
+        <div class="contenido_index">
+            <div class="c_izq" id="c_izq">
+                <?php
+                require('pages/barra.html');
+                ?>
+            </div>
+
+            <div class="c_der">
+                <?php
+                require('pages/index.html');
+                ?>
+            </div>
             
-            <?php
-            require('pages/index.html')
-            ?>
         </div>
         
     </div>
     <div>
         <?php
-            require('layout/footer.html')
+            require('layout/footer.html');
         ?>
     </div>
-        
+    <script src="assets/js/nav.js"></script>
 </body>
 </html>
