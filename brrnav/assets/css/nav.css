@@ -2,47 +2,47 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-  
+
 .contenedor {
     display: flex;
 }
-  
+
 .barra-lateral {
     width: 80px; /* Ancho de la barra lateral */
     background-color: #333;
     padding: 20px 0;
     color: #fff;
     text-align: center;
+    align-items: center;
 }
-  
+.icono p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    display: none;
+    font-size: bold;
+}
+
 .icono {
+    width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
+    border: 0;
+    background: transparent;
 }
-.icono .text{
-    display: none;
+.img_i{
+    width: 40px;
+    height: 40px;
 }
-  
+
 .icono:hover {
     background-color: #555;
 }
-  
+
 .contenido {
     flex-grow: 1;
     padding: 20px;
 }
-/* ... (mismo CSS que antes) */
-
-.expandida {
-    width: 200px; /* Ancho de la barra lateral expandida */
-    
-}
-  
-  /* ... (resto del CSS) */
-  /* ... (mismo CSS que antes) */
-
 #barraLateral {
     transition: width 0.3s; /* Agregar transición para suavizar el cambio de ancho */
 }
-  
-  /* ... (resto del CSS) */

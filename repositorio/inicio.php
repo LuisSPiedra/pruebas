@@ -15,11 +15,11 @@
         <div class="contenido_index">
             <div class="c_izq" id="c_izq">
                 <?php
-                require('pages/barra.html');
+                require('pages/nav.html');
                 ?>
             </div>
 
-            <div class="c_der">
+            <div class="c_der" id="c_der">
                 <?php
                 require('pages/index.html');
                 ?>

@@ -1,41 +1,46 @@
-.barran {
+.cont_nav {
     margin-top: 80px;
     display: flex;
 }
-  
-.navab {
+
+.barra-lateral {
     width: 100%; /* Ancho de la barra lateral */
-    background-color: #333;
+    background-color: #0B67A8;
     padding: 20px 0;
     color: #fff;
     text-align: center;
+    align-items: center;
+    height: 614px;
 }
-  
+.icono p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    display: none;
+    font-weight: bold;
+}
+
 .icono {
+    height: 80px;
+    width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
+    border: 0;
+    background: transparent;
 }
-.icono .text{
-    display: none;
+.img_i{
+    width: 40px;
+    height: 40px;
 }
-  
+
 .icono:hover {
-    background-color: #555;
+    background-color: #4B8DCA;
 }
-  
 
-/* ... (mismo CSS que antes) */
-
-.expandida {
-    width: 200px; /* Ancho de la barra lateral expandida */
-    
+.contenido {
+    flex-grow: 1;
+    padding: 20px;
 }
-  
-  /* ... (resto del CSS) */
-  /* ... (mismo CSS que antes) */
-
-#navab {
+#barraLateral {
     transition: width 0.3s; /* Agregar transición para suavizar el cambio de ancho */
 }
-  
-  /* ... (resto del CSS) */

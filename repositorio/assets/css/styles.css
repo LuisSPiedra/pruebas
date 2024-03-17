@@ -14,12 +14,18 @@ body{
 
     height: 100%;
     float: left;
-    width: 10%; /* O el ancho que desees */
+    width: 5%; /* O el ancho que desees */
 
 }
 .c_der{
 
     height: 100%;
     float: right;
-    width: 90%; /* O el ancho que desees */
+    width: 95%; /* O el ancho que desees */
+}
+#c_izq {
+    transition: width 0.3s; /* Agregar transición para suavizar el cambio de ancho */
+}
+#c_der{
+    transition: width 0.3s;
 }

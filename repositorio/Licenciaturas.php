@@ -11,12 +11,20 @@
     <?php
     require('layout/header.php');
     ?>
-    
-        <div>
-            <?php
-            require('pages/licenciaturas.html')
-            ?>
-        </div>
+
+        <div class="contenido_index">
+            <div class="c_izq" id="c_izq">
+                <?php
+                require('pages/nav.html');
+                ?>
+            </div>
+
+            <div class="c_der" id="c_der">
+                <?php
+                require('pages/licenciaturas.html')
+                ?>
+            </div>
+        
         <div>
         <?php
             require('layout/footer.html')

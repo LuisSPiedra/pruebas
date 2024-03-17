@@ -11,13 +11,19 @@
     <?php
     require('layout/header.php');
     ?>
-    
-        <div>
-            <?php
+        <div class="contenido_index">
+            <div class="c_izq" id="c_izq">
+                <?php
+                require('pages/nav.html');
+                ?>
+            </div>
+
+            <div class="c_der" id="c_der">
+                <?php
+                require('pages/archivos.php');
+                ?>
+            </div>
             
-            require('pages/archivos.php');
-            
-            ?>
         </div>
         
         <div>

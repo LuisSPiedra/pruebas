@@ -1,19 +1,25 @@
 function expandirBarraLateral() {
     var barraLateral = document.getElementById("navab");
-    /*
-    var txt = document.getElementById("text");
-    var txt2 = document.getElementById("text2");
+    var der= document.getElementById("c_der");
+    var izq = document.getElementById("c_izq");
+    var txt1 = document.getElementById("txt1");
+    var txt2 = document.getElementById("txt2");
+    
     txt2.style.display="block";
-    txt.style.display="block";*/
-    barraLateral.style.display = "none"; /* Ancho de la barra lateral expandida */
+    txt1.style.display="block";
+    der.style.width="90%";
+    izq.style.width="10%";
 }
   
 function contraerBarraLateral() {
     var barraLateral = document.getElementById("navab");
-    /*c_izq
-    var txt = document.getElementById("text");
-    var txt2 = document.getElementById("text2");
+    var der= document.getElementById("c_der");
+    var izq = document.getElementById("c_izq");
+    var txt1 = document.getElementById("txt1");
+    var txt2 = document.getElementById("txt2");
+    
+    der.style.width="95%";
+    txt1.style.display="none";
     txt2.style.display="none";
-    txt.style.display="none";*/
-    barraLateral.style.display = "block"; /* Ancho de la barra lateral contraída */
+    izq.style.width="5%";
 }
