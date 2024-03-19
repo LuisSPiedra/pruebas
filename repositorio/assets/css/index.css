@@ -81,3 +81,11 @@
     border-top: 2px solid #0056b3;
 
 }
+.actual{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: transparent;
+    
+}

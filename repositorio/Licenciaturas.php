@@ -15,7 +15,7 @@
         <div class="contenido_index">
             <div class="c_izq" id="c_izq">
                 <?php
-                require('pages/nav.html');
+                require('layout/nav.html');
                 ?>
             </div>
 
