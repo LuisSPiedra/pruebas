@@ -17,10 +17,17 @@
                         
                         if ($result->num_rows > 0) {
                             $row = $result->fetch_assoc();
+                            $id=$row['id'];
                             $nombre=$row['nombre'];
                             $imagen=$row['rutai'];
+                            $envid=urldecode($id);
+                            //?id=urlencode($id);&?nombre=urlencode($nombre);
+                            echo "<a href='Mostrar.php?id=$envid'>";
                             echo "<img src='assets/php/$imagen'>";
+                            echo "</a>";
+                            echo "<a href='Mostrar.php?id=$envid'>";
                             echo "<p>$nombre</p>";
+                            echo "</a>";
                         }else {
                             echo "No se encontraron registros.";
                         }
@@ -40,14 +47,22 @@
                         
                         if ($result->num_rows > 0) {
                             $row = $result->fetch_assoc();
+                            
+                            $id=$row['id'];
                             $nombre=$row['nombre'];
                             $imagen=$row['rutai'];
+                            $envid=urldecode($id);
+                            //?id=urlencode($id);&?nombre=urlencode($nombre);
+                            echo "<a href='Mostrar.php?id=$envid'>";
                             echo "<img src='assets/php/$imagen'>";
+                            echo "</a>";
+                            echo "<a href='Mostrar.php?id=$envid'>";
                             echo "<p>$nombre</p>";
+                            echo "</a>";
                         }else {
                             echo "No se encontraron registros.";
                         }
-                        $conn->close();   
+                        $conn->close();
                     ?>
                 </div>
                 </div>

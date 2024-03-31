@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Licienciaturas</title>
+    <?php
+        require('assets/php/conexion.php');
+        $id=isset($_GET['id']) ? $_GET['id'] : '';
+
+        $sql = "SELECT * FROM archivo where id=$id";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $titulo=$row['nombre'];
+            echo "<title>$titulo</title>";
+            
+        }
+    ?>
+    
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<div>
+    <div>
     <?php
     require('layout/header.php');
     ?>
@@ -20,7 +33,7 @@
 
             <div class="c_der" id="c_der">
                 <?php
-                require('pages/licenciaturas.html')
+                require('pages/mostrar.php');
                 ?>
             </div>
             
@@ -28,9 +41,12 @@
         
         <div>
         <?php
+            require('pages/crear.html');
             require('layout/footer.html')
             ?>
         </div>
     </div>
+    
+        
 </body>
 </html>

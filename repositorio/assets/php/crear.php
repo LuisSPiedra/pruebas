@@ -48,7 +48,7 @@ if (isset($_POST['guardar'])) {
     $sql = "INSERT INTO archivo (nombre,archivo, ruta,imagen,rutai, tipo,sinop,usario) VALUES ('$name', '$archivoNombreUnico', '$rutaF','$imagenNombreUnico', '$rutaI', '$tipo','$sinop', '$usuario')";
     $resultado=$conn->query($sql);
     if($resultado){
-        Header("location: ../../index.php");
+        Header("location: ../../Myfiles.php");
     }
 }
 

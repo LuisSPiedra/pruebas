@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
 
         $conn->close();
 
-        header('Location: ../../index.php');
+        header('Location: ../../Myfiles.php');
         exit;
     } else {
         echo "Archivo no encontrado.";

@@ -1,0 +1,76 @@
+.cont_libro{
+    background: transparent;
+    margin-top: 80px; 
+}
+.informacion{
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+.img_mostrar{
+    float: left;
+    width: 42%;
+    height: 96%;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 2px #0056b3;
+    margin-top: 10px;
+    margin-left: 18px;
+    display: block; /* Asegura que el div se muestre como bloque */
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    
+    border-radius: 15px;
+}
+
+.img_mostrar img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    
+}
+.descripcion_libro{
+    height: 96%;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    float: right;
+    width: 54%;
+    box-shadow: 0px 0px 5px 2px #0056b3;
+    margin-top: 10px;
+    margin-right: 17px;
+    border-radius: 15px;
+    display: block; /* Asegura que el div se muestre como bloque */
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    
+}
+.descripcion_libro h2{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: rgb(127, 127, 127);
+    font-style: normal;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #0056b3;   
+}
+.info_li{
+    text-align: center;
+    height: 70%;
+    background:yellowgreen;
+    font-size: 20px;
+    color: rgb(86, 86, 86);
+}
+.opciones_li{
+    height: 14%;
+    background: aqua;
+}
