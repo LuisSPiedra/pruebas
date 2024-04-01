@@ -1,0 +1,16 @@
+.header_design{
+    background: #d400ff;
+    width: 100%;
+    overflow: hidden; /* Limpiar el float */
+}
+
+.logo{
+    float: left;
+    width: 50%;
+    background: #000;
+}
+.username{
+    float: right;
+    width: 50%;
+    background: #ffff;
+}

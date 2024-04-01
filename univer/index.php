@@ -1,6 +1,5 @@
 <?php
 require('assets/php/validar.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
