@@ -5,18 +5,19 @@
         $username = $_POST["username"];
         $password = $_POST["password"];
     
-        $stmt = $conn->prepare("SELECT id, password FROM profesor WHERE username = ?");
+        $stmt = $conn->prepare("SELECT id,nombre, password FROM profesor WHERE username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $stmt->store_result();
     
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id, $password);
+            $stmt->bind_result($id,$nombre, $password);
             $stmt->fetch();
     
             if (($password)) {
                 $_SESSION["id"] = $id;
                 $_SESSION["username"] = $username;
+                $_SESSION["nombre"] = $nombre;
                 header("location: views/inicio.php");
             } else {
                 echo "Contraseña incorrecta";

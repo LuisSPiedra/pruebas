@@ -1,16 +1,70 @@
 .header_design{
-    background: #d400ff;
+    background: #ffffff;
     width: 100%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    height: 100%;
     overflow: hidden; /* Limpiar el float */
 }
 
 .logo{
     float: left;
     width: 50%;
-    background: #000;
+    height: 100%;
+    background: transparent;
+    padding-left: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo .inicio_btn{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.logo img{
+    width: 195px;
+    height: 100%;
 }
 .username{
+    
+    text-align: right;
+    height: 100%;
     float: right;
     width: 50%;
-    background: #ffff;
+    background: transparent;
+    padding-right: 10px;
+    
+    
+}
+.username .user_menu{
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    width: 210px;
+    height: 100%;
+    padding-top: 2px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+.username span{
+    float: right;
+    padding-top: 12px;
+    width: 155px;
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.username span img{
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+}
+.username .button-icon {
+    float: left;
+    
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Alto de la imagen */
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+    margin-right: 5px; /* Espacio a la derecha de la imagen */
 }

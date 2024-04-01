@@ -6,7 +6,7 @@ if (!isset($_SESSION["id"])) {
     
     exit();
 }
-$username = $_SESSION["username"];
+$nombre = $_SESSION["nombre"];
 // El usuario ha iniciado sesión correctamente, puedes mostrar la página de inicio aquí.
 ?>
 
@@ -15,10 +15,13 @@ require('header.html');
 
 echo "<div class='header_design'>";
 echo "<div class='logo'>";
-echo  "<img src='../assets/resources/logouniver.png'>";
+echo  "<button class='inicio_btn'><img src='../assets/resources/logopng.png'></button>";
 echo "</div>";
 echo "<div class='username'>";
-echo "<h1>$username</h1>";
+echo "<button class='user_menu'>";
+echo "<img src='../assets/resources/Iconos 03 Usuario.svg' alt='Icono'class='button-icon'>";
+echo "<span>$nombre <img src='../assets/resources/downarrow_121316.svg' alt='Icono'class='down'></span>"; 
+echo "</button>";
 echo "</div>";
 echo "</div>";
 
