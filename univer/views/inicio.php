@@ -15,9 +15,14 @@
         </div>
         <div class="contenido">
             <div class="navegacion">
-
+                
+                <?php require('../layout/nav.html'); ?>
             </div>
             <div class="cuerpo">
+                <?php
+                echo "<p class='saludo'>Bienvenid@ $nombre</p>";
+                ?>
+            
                 <?php
                     require("../pages/inicio.html");
                 ?>

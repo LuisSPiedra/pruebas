@@ -1,28 +1,27 @@
 <?php
-session_start();
+require('../assets/php/nombre.php');
+?>
+<link rel="stylesheet" href="../assets/css/header.css">
+<div class="header_design">
+    <div class="logo">
+        <a href="../views/inicio.php">
+            <img src="../assets/resources/logopng.png" alt="">
+        </a>
 
-if (!isset($_SESSION["id"])) {
-    header("location: login.php");
+    </div>
+    <div class="username">
+        <div class="perfil_down">
+            <a href="#" class="dropbtn" onclick="toggleMenu()">
+                <img src="../assets/resources/Iconos 03 Usuario.svg" class="button-icon" alt="">
+                <span><?php echo "$nombre";?></span>
+            </a>
+        </div>
+        
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#" class="separ"><img src="../assets/resources/Iconos 03 Usuario.svg" alt="">Perfil</a>
+            <a href="../assets/php/cerrar.php"><img src="../assets/resources/Salir.svg" alt="">Cerrar</a>
+        </div>
+    </div>
     
-    exit();
-}
-$nombre = $_SESSION["nombre"];
-// El usuario ha iniciado sesión correctamente, puedes mostrar la página de inicio aquí.
-?>
-
-<?php
-require('header.html');
-
-echo "<div class='header_design'>";
-echo "<div class='logo'>";
-echo  "<button class='inicio_btn'><img src='../assets/resources/logopng.png'></button>";
-echo "</div>";
-echo "<div class='username'>";
-echo "<button class='user_menu'>";
-echo "<img src='../assets/resources/Iconos 03 Usuario.svg' alt='Icono'class='button-icon'>";
-echo "<span>$nombre <img src='../assets/resources/downarrow_121316.svg' alt='Icono'class='down'></span>"; 
-echo "</button>";
-echo "</div>";
-echo "</div>";
-
-?>
+</div>
+<script src="../assets/js/menu_usuario.js"></script>

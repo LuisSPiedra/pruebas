@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <div class="header">
-        <?php
-            require("../layout/header.php");
-        ?>
-    </div>
-    <div class="contenido">
-        <div class="navegacion">
-
-        </div>
-        <div class="cuerpo">
+    <main>
+        <div class="header">
             <?php
-                require("../pages_admin/inicio.html");
+                require("../layout_admin/header.php");
             ?>
         </div>
+        <div class="contenido">
+            <div class="navegacion">
+                <?php require('../layout_admin/nav.html'); ?>
+            </div>
+            <div class="cuerpo">
+                <?php
+                    echo "<p class='saludo'>Bienvenid@ $nombre</p>";
+                ?>
+                <?php
+                    require("../pages_admin/inicio.html");
+                ?>
+            </div>
+            
+        </div>
         
-    </div>
-    
-    <div class="footer">
+        <div class="footer">
 
-    </div>
+        </div>
+    <main>
 </body>
 </html>

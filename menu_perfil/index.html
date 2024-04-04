@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Desplegable</title>
+<style>
+    /* Estilo para el menú */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100%; /* Ancho al 100% del contenedor */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Clase para mostrar el menú cuando está abierto */
+    .show {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+    <a class="dropbtn" href="#" onclick="toggleMenu()">Menú</a>
+    <div class="dropdown-content" id="myDropdown">
+        <a href="#">Opción 1</a>
+        <a href="#">Opción 2</a>
+        <a href="#">Opción 3</a>
+    </div>
+</div>
+
+<script>
+function toggleMenu() {
+  var dropdownMenu = document.getElementById("myDropdown");
+  dropdownMenu.classList.toggle("show");
+}
+
+// Cerrar el menú si el usuario hace clic fuera de él
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+}
+</script>
+
+</body>
+</html>
