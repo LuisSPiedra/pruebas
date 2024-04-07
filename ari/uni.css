@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #contenedor-horario {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  
+  .dia {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .dia h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .clases {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .clases li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .hora, .materia, .lugar {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .editar, .eliminar {
+    padding: 0 5px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .editar:hover, .eliminar:hover

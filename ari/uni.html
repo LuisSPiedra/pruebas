@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Horario Semanal</title>
+  <link rel="stylesheet" href="uni.css">
+</head>
+<body>
+  <h1>Mi Horario Semanal</h1>
+  <div id="contenedor-horario">
+    <div class="dia">
+      <h2>Lunes</h2>
+      <ul class="clases">
+        <li>
+          <span class="hora">9:00 - 10:30</span>
+          <span class="materia">Matemáticas</span>
+          <span class="lugar">Aula 203</span>
+          <button class="editar">Editar</button>
+          <button class="eliminar">Eliminar</button>
+        </li>
+        <li>
+          <span class="hora">11:00 - 12:30</span>
+          <span class="materia">Español</span>
+          <span class="lugar">Aula 105</span>
+          <button class="editar">Editar</button>
+          <button class="eliminar">Eliminar</button>
+        </li>
+      </ul>
+    </div>
+    <div class="dia">
+      <h2>Martes</h2>
+      <ul class="clases">
+        <li>
+          <span class="hora">10:00 - 11:30</span>
+          <span class="materia">Historia</span>
+          <span class="lugar">Aula 302</span>
+          <button class="editar">Editar</button>
+          <button class="eliminar">Eliminar</button>
+        </li>
+        <li>
+          <span class="hora">12:00 - 13:30</span>
+          <span class="materia">Ciencias</span>
+          <span class="lugar">Laboratorio 1</span>
+          <button class="editar">Editar</button>
+          <button class="eliminar">Eliminar</button>
+        </li>
+      </ul>
+    </div>
+    </div>
+  <form id="nuevo-horario">
+    <h2>Agregar Nueva Clase</h2>
+    <label for="dia">Día:</label>
+    <select id="dia" name="dia">
+      <option value="lunes">Lunes</option>
+      <option value="martes">Martes</option>
+      <option value="lunes">Miercoles</option>
+      <option value="martes">jueves</option>
+      <option value="lunes">viernes</option>
+      <option value="martes">sabado</option>
+      </select>
+    <label for="hora">Hora:</label>
+    <input type="text" id="hora" name="hora">
+    <label for="materia">Materia:</label>
+    <input type="text" id="materia" name="materia">
+    <label for="lugar">Lugar:</label>
+    <input type="text" id="lugar" name="lugar">
+    <button type="submit">Agregar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

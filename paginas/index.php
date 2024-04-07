@@ -43,10 +43,10 @@
     // Mostrar los resultados
     
     while ($fila = mysqli_fetch_assoc($resultado)) {
-        echo $fila['id'].".- ". $fila['nombre'] . "<br>";
+        echo $fila['id'].".- ". $fila['nombre'];
     }
     
-
+    echo"<br>";
     // Mostrar los enlaces de paginación
     for ($i = 1; $i <= $totalPaginas; $i++) {
         echo "<a href='index.php?pagina=$i'>$i</a> ";

@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    min-height: 100vh; /* Mínimo alto de la pantalla */
+    background-color: #F1F5FB;
+}
+.header{
+    height: 62px;
+}
+.contenido{
+    width: 100%;
+    overflow: hidden;
+}
+.contenido .navegacion{
+    float: left;
+    width: 64px;
+    height: 100%;
+}
+.contenido .cuerpo{
+    padding-left: 64px;
+    float: right;
+    width: 100%;
+}
+.contenido .cuerpo .saludo{
+    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #0056b3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c2c5ca;
+
+}
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+    
+}
+.footer{
+    height: 30px;
+    width: 100%;
+    background: #0d47a1 !important;
+}

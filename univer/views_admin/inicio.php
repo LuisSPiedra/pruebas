@@ -19,18 +19,19 @@
             </div>
             <div class="cuerpo">
                 <?php
-                    echo "<p class='saludo'>Bienvenid@ $nombre</p>";
+                    echo "<p class='saludo'>Bienvenid@ administrador: $nombre</p>";
                 ?>
                 <?php
                     require("../pages_admin/inicio.html");
                 ?>
+                <div class="footer">
+                    
+                </div>
             </div>
             
         </div>
         
-        <div class="footer">
-
-        </div>
+        
     <main>
 </body>
 </html>

@@ -1,0 +1,59 @@
+CSS
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  text-align: center;
+}
+
+.editar, .eliminar {
+  padding: 0 5px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.editar:hover, .eliminar:hover {
+  background-color: #ccc;
+}
+
+#nuevo-horario {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+#nuevo-horario h2 {
+  margin-top: 0;
+}
+
+#nuevo-horario label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#nuevo-horario input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+#nuevo-horario button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#nuevo-horario button:hover {
+  background-color: #333;
+}

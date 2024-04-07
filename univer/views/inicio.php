@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../assets/resources/favicon.ico" type="image/png">
 </head>
 <body>
     <main>
@@ -20,19 +21,20 @@
             </div>
             <div class="cuerpo">
                 <?php
-                echo "<p class='saludo'>Bienvenid@ $nombre</p>";
+                echo "<p class='saludo'>Bienvenid@ profesor: $nombre</p>";
                 ?>
             
                 <?php
                     require("../pages/inicio.html");
                 ?>
+                <div class="footer">
+                    <p>pie</p>
+                </div>
             </div>
             
         </div>
         
-        <div class="footer">
-
-        </div>
+        
     </main>
 </body>
 </html>

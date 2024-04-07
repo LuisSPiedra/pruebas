@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horario</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    td {
+        background-color: #fff;
+    }
+    td.editable {
+        cursor: pointer;
+    }
+    td.editable:hover {
+        background-color: #f0f0f0;
+    }
+    td.editable.active {
+        background-color: #ffc;
+    }
+</style>
+</head>
+<body>
+
+<h2>Mi Horario</h2>
+
+<table id="horario">
+  <tr>
+    <th>Hora</th>
+    <th>Lunes</th>
+    <th>Martes</th>
+    <th>Miércoles</th>
+    <th>Jueves</th>
+    <th>Viernes</th>
+  </tr>
+  <tr>
+    <td>8:00 - 9:00</td>
+    <td class="editable" data-dia="lunes" data-hora="8">Materia 1</td>
+    <td class="editable" data-dia="martes" data-hora="8">Materia 2</td>
+    <td class="editable" data-dia="miercoles" data-hora="8">Materia 3</td>
+    <td class="editable" data-dia="jueves" data-hora="8">Materia 4</td>
+    <td class="editable" data-dia="viernes" data-hora="8">Materia 5</td>
+  </tr>
+  <tr>
+    <td>9:00 - 10:00</td>
+    <td class="editable" data-dia="lunes" data-hora="9">Materia 6</td>
+    <td class="editable" data-dia="martes" data-hora="9">Materia 7</td>
+    <td class="editable" data-dia="miercoles" data-hora="9">Materia 8</td>
+    <td class="editable" data-dia="jueves" data-hora="9">Materia 9</td>
+    <td class="editable" data-dia="viernes" data-hora="9">Materia 10</td>
+  </tr>
+  <!-- Puedes añadir más filas según necesites -->
+</table>
+
+<script>
+    document.querySelectorAll('.editable').forEach(function(cell) {
+        cell.addEventListener('click', function() {
+            var value = prompt('Ingrese el nuevo valor para este horario:', this.textContent);
+            if (value !== null) {
+                this.textContent = value;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

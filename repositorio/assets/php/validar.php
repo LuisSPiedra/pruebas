@@ -11,10 +11,10 @@
         $stmt->store_result();
     
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id, $hashed_password);
+            $stmt->bind_result($id,$password);
             $stmt->fetch();
     
-            if (password_verify($password, $hashed_password)) {
+            if (($password)) {
                 $_SESSION["id"] = $id;
                 $_SESSION["username"] = $username;
                 header("location: inicio.php");
