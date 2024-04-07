@@ -23,7 +23,7 @@
                         echo "<a href='Mostrar.php?id=$envid'>";
                         echo "<img src='../assets/php/$imagen'>";
                         echo "</a>";
-                        echo "<a href='Mostrar.php?id=$envid'>";
+                        echo "<a href='mostrar.php?id=$envid'>";
                         echo "<p>$nombre</p>";
                         echo "</a>";
                     }else {

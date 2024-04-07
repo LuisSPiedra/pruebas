@@ -20,9 +20,50 @@
                     </div>
                     
                     <div class="cuerpo_modal">
-                        <form action="../assets/php/crear.php">
-                            
-                        </form>
+                        <div class="formu_modal">
+                            <form action="">
+                                <div class="entradas_modal">
+                                    <div class="entrada1">
+                                        <input type="text" required>
+                                        <label for="">Nombre</label>
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="">Imagen</label><br><br>
+                                        <input type="file" required>
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="">Archivo</label><br><br>
+                                        <input type="file" required>
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="opciones">Tipo:</label><br><br>
+                                            <select name="opciones" id="opciones">
+                                            <option value="1">Libro</option>
+                                            <option selected value="2">Proyecto</option>
+                                            <option value="3">Articulo</option>
+                                            <option value="4">Guía</option>
+                                            <option value="5">Tesis</option>
+                                            <option value="6">Trabajo Escolar</option>
+                                            <option value="7">Investigacion</option>
+                                        </select>
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="">Sinopsis:</label><br><br>
+                                        <textarea cols="30" rows="4" placeholder="Describe un poco tu archivo, que es..?, de que trata y como es "  name="sinopsis" id="sinopsis"></textarea>
+                                            
+                                    </div>
+                                </div>
+                                <div class="enviar_datos">
+                                    <div class="info">
+                                        <p>
+                                            Recuerda guardar tu archivo
+                                        </p>
+                                    </div>
+                                    <button type="button" id="guardar" name="guardar">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

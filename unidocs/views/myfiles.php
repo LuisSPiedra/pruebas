@@ -22,7 +22,7 @@
             <div class="cuerpo">
                 <?php
                     require("../pages/files.html");
-                    echo "Su id$id"; 
+                    require("../assets/php/archiuarios.php");
                 ?>
                 <div class="footer">
                     <p>pie</p>
