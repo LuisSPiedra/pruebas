@@ -2,7 +2,6 @@
 require('conexion.php');
 require('nombre.php');
 $name = $_POST['nombre'];
-$usuario = $_POST['usuario'];
 $tipo = $_POST['opciones'];
 $sinop =$_POST['sinopsis'];
 
@@ -45,10 +44,10 @@ if (isset($_POST['guardar'])) {
     move_uploaded_file($imagenTmp, $rutaI);
 
     //Ahora guardamos en la Base de datos 
-    $sql = "INSERT INTO archivo (nombre,archivo, ruta,imagen,rutai, tipo,sinop,usario) VALUES ('$name', '$archivoNombreUnico', '$rutaF','$imagenNombreUnico', '$rutaI', '$tipo','$sinop', '$usuario')";
+    $sql = "INSERT INTO archivo (nombre,archivo, ruta,imagen,rutai, tipo,sinop,usuario) VALUES ('$name', '$archivoNombreUnico', '$rutaF','$imagenNombreUnico', '$rutaI', '$tipo','$sinop', '$id')";
     $resultado=$conn->query($sql);
     if($resultado){
-        Header("location: ../../Myfiles.php");
+        Header("location: ../../views/myfiles.php");
     }
 }
 

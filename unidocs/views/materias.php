@@ -21,8 +21,11 @@
             </div>
             <div class="cuerpo">
                 <?php
-                    require("../pages/files.php");
-                    
+                echo "<p class='saludo'>Materias</p>";
+                ?>
+            
+                <?php
+                    require("../pages/materias.html");
                 ?>
                 <div class="footer">
                     <p>pie</p>

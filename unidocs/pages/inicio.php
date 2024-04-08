@@ -15,10 +15,10 @@
                     
                     if ($result->num_rows > 0) {
                         $row = $result->fetch_assoc();
-                        $id=$row['id'];
+                        $id2=$row['id'];
                         $nombre=$row['nombre'];
                         $imagen=$row['rutai'];
-                        $envid=urldecode($id);
+                        $envid=urldecode($id2);
                         //?id=urlencode($id);&?nombre=urlencode($nombre);
                         echo "<a href='Mostrar.php?id=$envid'>";
                         echo "<img src='../assets/php/$imagen'>";
@@ -46,10 +46,10 @@
                     if ($result->num_rows > 0) {
                         $row = $result->fetch_assoc();
                         
-                        $id=$row['id'];
+                        $id2=$row['id'];
                         $nombre=$row['nombre'];
                         $imagen=$row['rutai'];
-                        $envid=urldecode($id);
+                        $envid=urldecode($id2);
                         //?id=urlencode($id);&?nombre=urlencode($nombre);
                         echo "<a href='Mostrar.php?id=$envid'>";
                         echo "<img src='../assets/php/$imagen'>";
@@ -66,11 +66,33 @@
             </div>
         <div class="nov">
             <div class="subtitle">
-                <h2>Mis guardados</h2>
+                <h2>Mis archivos</h2>
             </div>
             <div class="subimage">
-                <img src="../assets/php/image/978968243930.jpg" alt="">
-                <p>Nombre</p>
+            <?php
+                    require('../assets/php/conexion.php');
+                    $ultiSQL = "SELECT * FROM archivo where usuario= $id ORDER BY usuario DESC LIMIT 1";
+                    $result = $conn->query($ultiSQL);
+                    
+                    if ($result->num_rows > 0) {
+                        $row = $result->fetch_assoc();
+                        
+                        $id2=$row['id'];
+                        $nombre=$row['nombre'];
+                        $imagen=$row['rutai'];
+                        $envid=urldecode($id2);
+                        //?id=urlencode($id);&?nombre=urlencode($nombre);
+                        echo "<a href='Mostrar.php?id=$envid'>";
+                        echo "<img src='../assets/php/$imagen'>";
+                        echo "</a>";
+                        echo "<a href='Mostrar.php?id=$envid'>";
+                        echo "<p>$nombre</p>";
+                        echo "</a>";
+                    }else {
+                        echo "No se encontraron registros.";
+                    }
+                    $conn->close();
+                ?>
             </div>
         </div>
         
