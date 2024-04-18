@@ -40,8 +40,3 @@ body::-webkit-scrollbar {
     display: none;  /* Ocultar scroll */
     
 }
-.footer{
-    height: 30px;
-    width: 100%;
-    background: #0d47a1 !important;
-}

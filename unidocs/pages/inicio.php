@@ -20,7 +20,7 @@
                         $imagen=$row['rutai'];
                         $envid=urldecode($id2);
                         //?id=urlencode($id);&?nombre=urlencode($nombre);
-                        echo "<a href='Mostrar.php?id=$envid'>";
+                        echo "<a href='mostrar.php?id=$envid'>";
                         echo "<img src='../assets/php/$imagen'>";
                         echo "</a>";
                         echo "<a href='mostrar.php?id=$envid'>";
@@ -51,7 +51,7 @@
                         $imagen=$row['rutai'];
                         $envid=urldecode($id2);
                         //?id=urlencode($id);&?nombre=urlencode($nombre);
-                        echo "<a href='Mostrar.php?id=$envid'>";
+                        echo "<a href='mostrar.php?id=$envid'>";
                         echo "<img src='../assets/php/$imagen'>";
                         echo "</a>";
                         echo "<a href='Mostrar.php?id=$envid'>";
@@ -82,10 +82,10 @@
                         $imagen=$row['rutai'];
                         $envid=urldecode($id2);
                         //?id=urlencode($id);&?nombre=urlencode($nombre);
-                        echo "<a href='Mostrar.php?id=$envid'>";
+                        echo "<a href='mostrar.php?id=$envid'>";
                         echo "<img src='../assets/php/$imagen'>";
                         echo "</a>";
-                        echo "<a href='Mostrar.php?id=$envid'>";
+                        echo "<a href='mostrar.php?id=$envid'>";
                         echo "<p>$nombre</p>";
                         echo "</a>";
                     }else {

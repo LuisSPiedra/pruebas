@@ -12,7 +12,7 @@
     list-style: none;
 }
 .barra li{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .barra .item_nav_barr{
     width: 100%;
@@ -20,7 +20,7 @@
 }
 .barra .item_nav_barr img{
     float: left;
-    margin-top: 16px;
+    margin-top: 30px;
     width: 100%;
     height: 32px;
 }
@@ -28,7 +28,7 @@
     text-align: left;
     display: none;
     float: right;
-    margin-top: 25px;
+    margin-top: 30px;
     width: 70%;
     height: 32px;
     color: white;

@@ -28,7 +28,9 @@
                     require("../pages/inicio.php");
                 ?>
                 <div class="footer">
-                    <p>pie</p>
+                    <?php
+                    require("../layout/footer.html");
+                    ?>
                 </div>
             </div>
             
