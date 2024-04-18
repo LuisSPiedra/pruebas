@@ -1,0 +1,30 @@
+.footer {
+    background-color: #3498db; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+}
+
+.footer p {
+    margin-bottom: 10px; /* Espaciado inferior del párrafo */
+}
+
+.redes-sociales {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Quita el espacio interno */
+}
+
+.redes-sociales li {
+    display: inline-block; /* Muestra los elementos en línea */
+    margin-right: 10px; /* Margen derecho entre los elementos */
+}
+
+.redes-sociales li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.redes-sociales img {
+    width: 25px; /* Ancho de las imágenes */
+    height: auto; /* Altura automática */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}

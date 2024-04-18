@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="../assets/css/files.css">
+<div class="files">
+    <div class="files_head">
+        <div class="files_titulo">
+            <p>Mis archivos</p>
+        </div>
+        <div class="files_add">
+            <a href="" id="openModalLink">
+                <img src="../assets/resources/Add.svg" alt="">
+            </a>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal_head">
+                        <div class="modal_title">
+                            <p>Agregar</p>
+                        </div>
+                        <div class="cerrar_modal">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cuerpo_modal">
+                        <div class="formu_modal">
+                            <form action="../assets/php/crear.php" method="post" enctype="multipart/form-data">
+                                <div class="entradas_modal">
+                                    <div class="entrada1">
+                                        <input type="text" required class="nombre" id="nombre" name="nombre">
+                                        <label for="">Nombre</label>
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="">Imagen</label><br><br>
+                                        <input type="file" required id="imagen" name="imagen">
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="">Archivo</label><br><br>
+                                        <input type="file" required name="file" id="file">
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="opciones">Tipo:</label><br><br>
+                                            <select name="opciones" id="opciones">
+                                            <option value="1">Libro</option>
+                                            <option selected value="2">Proyecto</option>
+                                            <option value="3">Articulo</option>
+                                            <option value="4">Guía</option>
+                                            <option value="5">Tesis</option>
+                                            <option value="6">Trabajo Escolar</option>
+                                            <option value="7">Investigacion</option>
+                                        </select>
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="opciones">Materias:</label><br><br>
+                                            <select name="opciones" id="materias">
+                                            <option value="1">Libro</option>
+                                            <option selected value="2">Proyecto</option>
+                                            <option value="3">Articulo</option>
+                                            <option value="4">Guía</option>
+                                            <option value="5">Tesis</option>
+                                            <option value="6">Trabajo Escolar</option>
+                                            <option value="7">Investigacion</option>
+                                        </select>
+                                    </div>
+                                    <div class="entrada">
+                                        <label for="">Sinopsis:</label><br><br>
+                                        <textarea cols="30" rows="4" placeholder="Describe un poco tu archivo, que es..?, de que trata y como es "  name="sinopsis" id="sinopsis"></textarea>
+                                            
+                                    </div>
+                                </div>
+                                <div class="enviar_datos">
+                                    <div class="info">
+                                        <p>
+                                            Recuerda guardar tu archivo
+                                        </p>
+                                    </div>
+                                    <input id="guardar" name="guardar" value="Guardar" class="btn_g" type="submit">
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!--
+<div class="archivo_usuarios">
+    <div class="mi_archivos">
+        <ul>
+            <li>
+                <a href="">
+                    <div class="link_arch">
+                        <div class="archivo">
+                            <div class="img_arch">
+                                <img src="../assets/resources/rectoria.jpg" alt="">
+                            </div>
+                            <div class="nom_arch">
+                                <span>Nombre</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </a>
+            </li>
+        </ul>
+        <div class="paginas">
+            <a href="">
+                <div class="pags_des">
+                    <span>1</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>-->
+<script src="../assets/js/files.js"></script>

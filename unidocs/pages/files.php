@@ -59,7 +59,7 @@
                                                 $resultado2 = mysqli_query($conn, $sqle);
                                                 
                                                 while ($row = mysqli_fetch_assoc($resultado2)) {
-                                                    echo "<option value='".$row['id']."'>".$row['nombre']."</option>";
+                                                    echo "<option value='".$row['id']."'>".$row['id']."-".$row['nombre']."</option>";
                                                 }
                                                 ?>
                                                 
