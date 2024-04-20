@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Establece la altura del contenedor como 100% del viewport */
+    background: linear-gradient(to right, #ffcccc, #cc99ff); /* Cambia los colores del degradado según lo necesites */
+}
+  
+.content {
+    height: 50%;
+    width: 100%; /* Establece el ancho del contenido dentro del contenedor */
+    padding: 20px; /* Añade un espacio alrededor del contenido */
+    background-color: white; /* Cambia el color de fondo del contenido según lo necesites */
+}

@@ -1,0 +1,62 @@
+.materias{
+    min-height: 80vh;
+    background: transparent;
+
+    overflow: hidden; /* para evitar que los divs floten fuera del contenedor */
+
+    text-align: center;
+}
+.materias a{
+    text-decoration: none;
+}
+.materias > div{
+
+    display: inline-flex;
+    width: 250px; /* puedes ajustar el ancho según tu diseño */
+    height: 150px; /* puedes ajustar la altura según tu diseño */
+    border: 1.6px solid rgb(25, 25, 25); /* para visualizar los divs */
+    background-image: url(../resources/fondo2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px; /* Redondear esquina superior izquierda */
+    border-top-right-radius: 10px; /* Redondear esquina superior derecha */
+    border-bottom-left-radius: 10px; /* Redondear esquina inferior izquierda */
+    border-bottom-right-radius: 10px; /* Redondear esquina inferior derecha */
+}
+.arriba{
+    color: #fff;
+    height: 60px;
+    background: transparent;
+    margin-top: 3%;
+    margin-left: 3%;
+    opacity: 0.85;
+}
+.abajo{
+    padding-top: 15px;
+    background: #fff;
+    height: 80px;
+    color: #000;
+    border-bottom-left-radius: 10px; /* Redondear esquina inferior izquierda */
+    border-bottom-right-radius: 10px; /* Redondear esquina inferior derecha */
+}
+.izq_arriba{
+    z-index: 1;
+    display: block;
+    background: #fff;
+    color: #4063ff;
+    padding: 4px;
+    border-radius: 5px;
+    width: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mat_title{
+    color: #4063ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cont_mate{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 100%;
+    flex-direction: column;
+}

@@ -1,0 +1,8 @@
+.abcdario{
+    min-height: 80vh;
+    background: transparent;
+
+    overflow: hidden; /* para evitar que los divs floten fuera del contenedor */
+
+    text-align: center;
+}

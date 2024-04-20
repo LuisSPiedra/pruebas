@@ -11,11 +11,11 @@
         $stmt->store_result();
     
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id,$password);
+            $stmt->bind_result($idu,$password);
             $stmt->fetch();
     
             if (($password)) {
-                $_SESSION["id"] = $id;
+                $_SESSION["id"] = $idu;
                 $_SESSION["username"] = $username;
                 header("location: views/inicio.php");
             } else {

@@ -1,7 +1,7 @@
 /*Contenido*/
 .contenido_principal {
     background: transparent;
-    min-height: 500px;
+    min-height: 80vh;
 }
 
 .tarjetas{

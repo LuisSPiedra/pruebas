@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <?php
+        require('../assets/php/conexion.php');
+        $nombremat=isset($_GET['nombre']) ? $_GET['nombre'] : '';
+        $sql = "SELECT * FROM sublicen where id=$nombremat";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $titulo=$row['nombre'];
+            echo "<title>$titulo</title>";
+            
+        }
+    ?>
+    
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/resources/favicon.ico" type="image/png">
 </head>
@@ -21,11 +33,10 @@
             </div>
             <div class="cuerpo">
                 <?php
-                echo "<p class='saludo'>Materias</p>";
+                echo "<p class='saludo'>$titulo</p>";
                 ?>
-            
                 <?php
-                    require("../pages/materias.html");
+                    require("../pages/mosmat.php");
                 ?>
                 <div class="footer">
                     <?php

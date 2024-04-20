@@ -71,7 +71,7 @@
             <div class="subimage">
             <?php
                     require('../assets/php/conexion.php');
-                    $ultiSQL = "SELECT * FROM archivo where usuario= $id ORDER BY usuario DESC LIMIT 1";
+                    $ultiSQL = "SELECT * FROM archivo where usuario= $idu ORDER BY id DESC LIMIT 1";
                     $result = $conn->query($ultiSQL);
                     
                     if ($result->num_rows > 0) {

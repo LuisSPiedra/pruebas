@@ -45,7 +45,7 @@ if (isset($_POST['guardar'])) {
     move_uploaded_file($imagenTmp, $rutaI);
 
     //Ahora guardamos en la Base de datos 
-    $sql = "INSERT INTO archivo (nombre,archivo, ruta,imagen,rutai, tipo,sinop,usuario,materia) VALUES ('$name', '$archivoNombreUnico', '$rutaF','$imagenNombreUnico', '$rutaI', '$tipo','$sinop', '$id','$materias')";
+    $sql = "INSERT INTO archivo (nombre,archivo, ruta,imagen,rutai, tipo,sinop,usuario,materia) VALUES ('$name', '$archivoNombreUnico', '$rutaF','$imagenNombreUnico', '$rutaI', '$tipo','$sinop', '$idu','$materias')";
     $resultado=$conn->query($sql);
     if($resultado){
         Header("location: ../../views/myfiles.php");

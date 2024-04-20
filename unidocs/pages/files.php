@@ -48,7 +48,7 @@
                                         </select>
                                     </div>
                                     <div class="entrada">
-                                        <label for="materias">Materias:</label><br><br>
+                                        <label for="materias">Tema:</label><br><br>
                                             <select name="materias" id="materias">
                                             
                                                 <?php
@@ -59,7 +59,7 @@
                                                 $resultado2 = mysqli_query($conn, $sqle);
                                                 
                                                 while ($row = mysqli_fetch_assoc($resultado2)) {
-                                                    echo "<option value='".$row['id']."'>".$row['id']."-".$row['nombre']."</option>";
+                                                    echo "<option value='".$row['id']."'>".$row['nombre']."</option>";
                                                 }
                                                 ?>
                                                 
@@ -103,7 +103,7 @@
     // Definir el número de resultados por página
     $resultadosPorPagina = 10;
     // Obtener el número total de registros
-    $queryb = "SELECT COUNT(*) as total FROM archivos_usuarios where id=$id";
+    $queryb = "SELECT COUNT(*) as total FROM archivos_usuarios where id=$idu";
     $resultado = mysqli_query($conn, $queryb);
     $fila = mysqli_fetch_assoc($resultado);
     $totalResultados = $fila['total'];
@@ -118,7 +118,7 @@
     $indiceInicial = ($paginaActual - 1) * $resultadosPorPagina;
 
     // Obtener los registros para la página actual
-    $queryc = "SELECT * FROM archivos_usuarios where id=$id LIMIT $indiceInicial, $resultadosPorPagina";
+    $queryc = "SELECT * FROM archivos_usuarios where id=$idu LIMIT $indiceInicial, $resultadosPorPagina";
     $resultado = mysqli_query($conn, $queryc);
 
     

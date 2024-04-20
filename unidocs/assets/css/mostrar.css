@@ -1,6 +1,6 @@
 .libro_info{
     padding: 25px;
-    min-height: 560px;
+    min-height: 80vh;
     overflow: hidden;
     min-width: 500px;
     margin-bottom: 10px;
@@ -55,10 +55,12 @@
 .libro_info .libro_opciones .opciones {
     
     border: 2px solid #0056b3;
-    width: 200px;
-    margin: auto;
     text-align: center;
     align-items: center;
+    border-radius: 10px;
+    height: 50px;
+    flex: 1;
+    
 }
 .libro_info .libro_opciones .opciones a{
     font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
@@ -69,11 +71,17 @@
     
     width: 20px;
     height: 100%;
+    margin-top: 10px;
     margin-right: 5px;
 }
 .libro_info .libro_opciones .opciones .link_libro span{
+    margin-top: 10px;
     font-size: 20px;
 }
 .libro_info .libro_opciones .opciones ul{
     list-style: none;
+}
+.div_opc{
+    
+    display: flex;
 }

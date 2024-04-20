@@ -13,6 +13,7 @@ $nombreArchivo = $row['archivo'];
 $rutaArchivo = $row['ruta'];
 $imagen=$row['rutai'];
 $info =$row['sinop'];
+$usuario=$row['usuario'];
 ?>
 <link rel="stylesheet" href="../assets/css/mostrar.css">
 <div class="libro_info">
@@ -27,19 +28,79 @@ $info =$row['sinop'];
                 <?php
                 echo"$info";?>
             </p>
-            <div class="opciones">
-                <ul>
-                    <li>
-                        <a href="../assets/php/<?php echo"$rutaArchivo";?>" download="<?php echo"$nombreArchivo";?>">
-                            <div class="link_libro">
-                                <img src="../assets/resources/download_icon_128877.svg" alt="">
-                                <span>Descargar</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            
+            <div class="div_opc">
+                <?php
+                if($idu == $usuario){
+                ?>
+                <div class="opciones">
+                    <ul>
+                        <li>
+                            <a href="../assets/php/<?php echo"$rutaArchivo";?>" download="<?php echo"$nombreArchivo";?>">
+                                <div class="link_libro">
+                                    <img src="../assets/resources/download_icon_128877.svg" alt="">
+                                    <span>Descargar</span>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="opciones">
+                    <ul>
+                        <li>
+                            <a href="../assets/php/<?php echo"$rutaArchivo";?>" download="<?php echo"$nombreArchivo";?>">
+                                <div class="link_libro">
+                                    <img src="../assets/resources/download_icon_128877.svg" alt="">
+                                    <span>Editar</span>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="opciones">
+                    <ul>
+                        <li>
+                            <a href="../assets/php/<?php echo"$rutaArchivo";?>" download="<?php echo"$nombreArchivo";?>">
+                                <div class="link_libro">
+                                    <img src="../assets/resources/download_icon_128877.svg" alt="">
+                                    <span>Borrar</span>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <?php
                 
+                }else{
+                    
+                
+                
+                ?>
+                <div class="opciones">
+                    <ul>
+                        <li>
+                            <a href="../assets/php/<?php echo"$rutaArchivo";?>" download="<?php echo"$nombreArchivo";?>">
+                                <div class="link_libro">
+                                    <img src="../assets/resources/download_icon_128877.svg" alt="">
+                                    <span>Descargar</span>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <?php
+                }
+                ?>
             </div>
+            
         </div>
     </div>
 </div>
