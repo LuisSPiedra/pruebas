@@ -1,6 +1,6 @@
 <?php
 require('assets/php/validar.php');
-
+require('assets/php/registrar.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,19 +33,19 @@ require('assets/php/validar.php');
                     <!--Login-->
                     <form action="" class="formulario__login" method="post">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico/Matricula" name="username" required>
+                        <input type="text" placeholder="Correo Electronico/Username" name="username" required>
                         <input type="password" placeholder="Contraseña" name="password" required>
                         <button name="iniciar">Entrar</button>
                     </form>
                     <p id="error-message"></p>
                     <!--Register-->
-                    <form action="" class="formulario__register">
+                    <form action="" class="formulario__register" method="post">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo" >
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
-                        <button >Regístrarse</button>
+                        <input type="text" placeholder="Nombre completo" name="nombre" required>
+                        <input type="email" placeholder="Correo Electronico" name="mail" required>
+                        <input type="text" placeholder="Usuario" name="username" required>
+                        <input type="password" placeholder="Contraseña" name="password" required>
+                        <button name="registrar">Regístrarse</button>
                     </form>
                     <script>
                         function login() {

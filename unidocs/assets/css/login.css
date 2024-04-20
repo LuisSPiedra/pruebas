@@ -108,31 +108,27 @@ main{
     text-align: center;
     margin-bottom: 20px;
     color: #0D5EAF;
-    
-    border-bottom: 2px dashed #0D5EAF;
 }
 
 .contenedor__login-register form input{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 10px;
     border: none;
     background: #F2F2F2;
     font-size: 16px;
     outline: none;
-    border-bottom: 2px solid #094987;
 }
 
 .contenedor__login-register form button{
     padding: 10px 40px;
-    margin-top: 50px;
-    border: 2px solid #094987;
-    box-shadow: 0 0 5px 0 #094987;
+    margin-top: 40px;
+    border: none;
     font-size: 14px;
-    background: #ffffff;
+    background: #094987;
     font-weight: 600;
     cursor: pointer;
-    color: #094987;
+    color: white;
     outline: none;
 }
 
@@ -151,7 +147,9 @@ main{
     display: none;
 }
 
-
+.alerta{
+    background: #fff;
+}
 
 @media screen and (max-width: 850px){
 
